@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my-course/my-course",
+    "pages/my/my"
+  ],
+  "subPackages": [
+    {
+      "root": "pagesModule",
+      "pages": [
+        "draw/draw"
+      ]
+    },
+    {
+      "root": "pagesModule1",
+      "pages": [
+        "learn/learn"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#FFFFFF"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#333333",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "./static/images/tabbar/icon-index.png",
+        "selectedIconPath": "./static/images/tabbar/icon-index-active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/my-course/my-course",
+        "iconPath": "./static/images/tabbar/icon-course.png",
+        "selectedIconPath": "./static/images/tabbar/icon-course-active.png",
+        "text": "商城"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "./static/images/tabbar/cute_monkey_grey.png",
+        "selectedIconPath": "./static/images/tabbar/cute_monkey_color.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "preloadRule": {
+    "pagesModule1/learn/learn": {
+      "network": "all",
+      "packages": [
+        "__APP__"
+      ]
+    }
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wxb4d0ce9d5a7d5b8d"
+  ],
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

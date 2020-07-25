@@ -1,0 +1,17 @@
+{
+  "errNo": 0,
+  "errstr": "success",
+  "data": {
+    "list": [
+      {
+        "brand": "OPPO"
+      },
+      {
+        "brand": "VIVO"
+      },
+      {
+        "model": "MI 8"
+      }
+    ]
+  }
+}

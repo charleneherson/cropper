@@ -1,0 +1,2 @@
+.box-shadow-top{box-shadow:0 -0.5rem 2rem rgba(51,51,51,0.15)}.item{background-image:url("")}.reset{top:-75rpx;left:18.5rpx;width:130rpx;height:130rpx;border-radius:50%}.done{top:-75rpx;right:18.5rpx;width:130rpx;height:130rpx;border-radius:50%}button{padding:0;-webkit-appearance:none;border:none}button::after{content:"";border:none}
+

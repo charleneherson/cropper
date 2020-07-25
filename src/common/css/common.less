@@ -1,0 +1,75 @@
+@color-light-border: #e9ebef;
+
+.hairline-common(@color, @top, @right, @bottom, @left) {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  pointer-events: none;
+  border: 0 solid @color;
+  z-index: 1;
+  top: @top;
+  right: @right;
+  bottom: @bottom;
+  left: @left;
+}
+
+.hairline(@color: @color-light-border) {
+  .hairline-common(@color, -50%, -50%, -50%, -50%);
+  transform: scale(0.5);
+}
+
+.hairline-top(@color: @color-light-border, @left: 0, @right: 0) {
+  .hairline-common(@color, 0, @right, auto, @left);
+  border-top-width: 1px;
+  transform: scaleY(0.5);
+}
+
+.hairline-right(@color: @color-light-border, @top: 0, @bottom: 0) {
+  .hairline-common(@color, @top, 0, @bottom, auto);
+  border-right-width: 1px;
+  transform: scaleX(0.5);
+}
+
+.hairline-bottom(@color: @color-light-border, @left: 0, @right: 0) {
+  .hairline-common(@color, auto, @right, 0, @left);
+  border-bottom-width: 1px;
+  transform: scaleY(0.5);
+}
+
+.hairline-left(@color: @color-light-border, @top: 0, @bottom: 0) {
+  .hairline-common(@color, @top, auto, @bottom, 0);
+  border-left-width: 1px;
+  transform: scaleX(0.5);
+}
+
+[class*="zyb-hairline"] {
+  position: relative;
+}
+
+.zyb-hairline {
+  &--top::after {
+    .hairline-top();
+  }
+
+  &--left::after {
+    .hairline-left();
+  }
+
+  &--right::after {
+    .hairline-right();
+  }
+
+  &--bottom::after {
+    .hairline-bottom();
+  }
+
+  &--top-bottom::after {
+    .hairline();
+    border-width: 1px 0;
+  }
+
+  &--all::after {
+    .hairline();
+    border-width: 1px;
+  }
+}

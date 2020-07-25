@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "write",
+  "pageOrientation": "portrait",
+  "navigationStyle": "custom",
+  "disableScroll": true,
+  "usingComponents": {
+    "com-header": "/pagesModule/draw/components/com-header"
+  }
+}

@@ -1,0 +1,1 @@
+<button data-event-opts="{{[['tap',[['nav']]]]}}" bindtap="__e">DIY</button>
