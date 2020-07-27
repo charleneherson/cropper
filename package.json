@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "i": "set SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass && npm i && node ./scripts/fix-uni-bug.js",
-    "yaya": "node ./scripts/copy-npmYayaUni-pm1.js",
     "serve": "npm run dev:h5",
     "dev": "cross-env NODE_ENV=development UNI_PLATFORM=mp-weixin vue-cli-service uni-build --watch --minimize",
     "build": "npm run build:mp-weixin",
@@ -65,7 +64,6 @@
     "@types/uni-app": "*",
     "@vue/cli-plugin-babel": "3.5.1",
     "@vue/cli-service": "^4.1.0",
-    "@yaya/director-uni": "^0.13.7",
     "babel-plugin-import": "^1.11.0",
     "mini-types": "*",
     "miniprogram-api-typings": "^2.8.0-2",

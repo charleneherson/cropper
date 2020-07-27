@@ -4,6 +4,9 @@
   "navigationStyle": "custom",
   "disableScroll": true,
   "usingComponents": {
-    "com-header": "/pagesModule/draw/components/com-header"
+    "color-picker": "/components/common/color-picker/index",
+    "com-bottom-panel": "/components/common/bottom-panel/index",
+    "com-header": "/pagesModule/draw/components/com-header",
+    "com-canvas-draw": "/pagesModule/draw/components/com-draw"
   }
 }

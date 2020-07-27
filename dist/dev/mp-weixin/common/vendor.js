@@ -8694,7 +8694,11 @@ var _default = {
       "pageOrientation": "portrait",
       "navigationStyle": "custom",
       "disableScroll": true,
-      "usingComponents": {}
+      "usingComponents": {
+        "com-bottom-panel": "/components/common/bottom-panel/index",
+        "com-header": "/pagesModule/draw/components/com-header",
+        "com-canvas-draw": "/pagesModule/draw/components/com-draw"
+      }
     },
     "pagesModule1/learn/learn": {
       "navigationBarTitleText": "write",
@@ -8702,6 +8706,10 @@ var _default = {
       "navigationStyle": "custom",
       "disableScroll": true,
       "usingComponents": {}
+    },
+    "pages/mall/mall": {
+      "navigationStyle": "custom",
+      "navigationBarTitleText": "商城"
     }
   },
   "globalStyle": {
@@ -10232,52 +10240,6 @@ function normalizeComponent (
   }
 }
 
-
-/***/ }),
-/* 24 */
-/*!*************************************!*\
-  !*** ./src/mixins/footerAdapter.js ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  data: function data() {
-    return {
-      isIpx: false,
-      // 判断是不是ipX
-      yyFooterPaddingHeight: 0,
-      // footer底部的padding-bottom高度
-      yyFooterPaddingBottom: 0 // footer遮挡的底部高度
-
-    };
-  },
-  methods: {
-    ipXFun: function ipXFun() {
-      var _uni$getSystemInfoSyn = uni.getSystemInfoSync(),
-          statusBarHeight = _uni$getSystemInfoSyn.statusBarHeight;
-
-      if (statusBarHeight > 20) {
-        this.isIpx = true;
-        this.yyFooterPaddingHeight = 34;
-        this.yyFooterPaddingBottom = 34 + uni.upx2px(130);
-      } else {
-        this.isIpx = false;
-        this.yyFooterPaddingHeight = 0;
-        this.yyFooterPaddingBottom = 0 + uni.upx2px(130);
-      }
-    }
-  }
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ })
 ]]);

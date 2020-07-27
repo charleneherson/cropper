@@ -1,7 +1,7 @@
 <template>
-    <header id="op_header" class="op_header">
-        <button>结束</button>
-    </header>
+  <header id="op_header" class="op_header">
+    <button>uuu</button>
+  </header>
 </template>
 
 <script>

@@ -7,7 +7,7 @@
       }
     },
     {
-      "path": "pages/my-course/my-course",
+      "path": "pages/mall/mall",
       "style": {
         "navigationStyle": "custom",
         "navigationBarTitleText": "商城"
@@ -64,7 +64,7 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/my-course/my-course",
+        "pagePath": "pages/mall/mall",
         "iconPath": "./static/images/tabbar/icon-course.png",
         "selectedIconPath": "./static/images/tabbar/icon-course-active.png",
         "text": "商城"

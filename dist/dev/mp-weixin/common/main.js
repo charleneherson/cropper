@@ -22,8 +22,6 @@ var _api = _interopRequireDefault(__webpack_require__(/*! config/api.js */ 16));
 
 var _request = _interopRequireDefault(__webpack_require__(/*! config/request.js */ 17));
 
-var _footerAdapter = _interopRequireDefault(__webpack_require__(/*! ./mixins/footerAdapter.js */ 24));
-
 var _config = _interopRequireDefault(__webpack_require__(/*! ./config/config */ 19));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -40,13 +38,7 @@ _vue.default.config.productionTip = false;
 _vue.default.prototype.$api = _api.default;
 _vue.default.prototype.$http = _request.default;
 /* 注册全局公用组件 */
-// Vue.component("yyLoading", yyLoading);
-
-/* 注册全局公用组件 */
 // 分享
-// Vue.mixin(yyLoadingMixin);
-
-_vue.default.mixin(_footerAdapter.default);
 
 _App.default.mpType = "app";
 var app = new _vue.default(_objectSpread({}, _App.default));

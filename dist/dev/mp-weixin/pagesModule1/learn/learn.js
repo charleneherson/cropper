@@ -1,6 +1,6 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pagesModule1/learn/learn"],{
 
-/***/ 53:
+/***/ 51:
 /*!*************************************************************!*\
   !*** ./src/main.js?{"page":"pagesModule1%2Flearn%2Flearn"} ***!
   \*************************************************************/
@@ -16,7 +16,7 @@ __webpack_require__(/*! @dcloudio/uni-stat */ 5);
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
 
-var _learn = _interopRequireDefault(__webpack_require__(/*! ./pagesModule1/learn/learn.vue */ 54));
+var _learn = _interopRequireDefault(__webpack_require__(/*! ./pagesModule1/learn/learn.vue */ 52));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -25,7 +25,7 @@ createPage(_learn.default);
 
 /***/ }),
 
-/***/ 54:
+/***/ 52:
 /*!******************************************!*\
   !*** ./src/pagesModule1/learn/learn.vue ***!
   \******************************************/
@@ -34,7 +34,7 @@ createPage(_learn.default);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _learn_vue_vue_type_template_id_5a905438___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./learn.vue?vue&type=template&id=5a905438& */ 55);
+/* harmony import */ var _learn_vue_vue_type_template_id_5a905438___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./learn.vue?vue&type=template&id=5a905438& */ 53);
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ 23);
 
 var script = {}
@@ -60,7 +60,7 @@ component.options.__file = "src/pagesModule1/learn/learn.vue"
 
 /***/ }),
 
-/***/ 55:
+/***/ 53:
 /*!*************************************************************************!*\
   !*** ./src/pagesModule1/learn/learn.vue?vue&type=template&id=5a905438& ***!
   \*************************************************************************/
@@ -69,7 +69,7 @@ component.options.__file = "src/pagesModule1/learn/learn.vue"
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_15_0_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_node_modules_vue_loader_lib_index_js_vue_loader_options_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_custom_block_loader_index_js_ref_0_1_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_learn_vue_vue_type_template_id_5a905438___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--15-0!../../../node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!../../../node_modules/vue-loader/lib??vue-loader-options!../../../node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-custom-block-loader??ref--0-1!../../../node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!./learn.vue?vue&type=template&id=5a905438& */ 56);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_15_0_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_node_modules_vue_loader_lib_index_js_vue_loader_options_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_custom_block_loader_index_js_ref_0_1_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_learn_vue_vue_type_template_id_5a905438___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--15-0!../../../node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!../../../node_modules/vue-loader/lib??vue-loader-options!../../../node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-custom-block-loader??ref--0-1!../../../node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!./learn.vue?vue&type=template&id=5a905438& */ 54);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_15_0_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_node_modules_vue_loader_lib_index_js_vue_loader_options_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_custom_block_loader_index_js_ref_0_1_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_learn_vue_vue_type_template_id_5a905438___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_15_0_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_node_modules_vue_loader_lib_index_js_vue_loader_options_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_custom_block_loader_index_js_ref_0_1_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_learn_vue_vue_type_template_id_5a905438___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
@@ -78,7 +78,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 56:
+/***/ 54:
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--15-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-custom-block-loader??ref--0-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!./src/pagesModule1/learn/learn.vue?vue&type=template&id=5a905438& ***!
   \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -101,5 +101,5 @@ render._withStripped = true
 
 /***/ })
 
-},[[53,"common/runtime","common/vendor"]]]);
+},[[51,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../.sourcemap/mp-weixin/pagesModule1/learn/learn.js.map

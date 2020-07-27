@@ -22,5 +22,6 @@
   text-align: center;
   font-weight: 400;
   color: #4a4949;
+  background: #fcf38a;
 }
 

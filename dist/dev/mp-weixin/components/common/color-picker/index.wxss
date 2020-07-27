@@ -1,0 +1,17 @@
+.color_picker .inner_bar.data-v-22017502 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+.color_picker .inner_bar ._span.data-v-22017502 {
+  width: 43px;
+  height: 15px;
+  background: #0091ff;
+  border: 1px solid #979797;
+}
+

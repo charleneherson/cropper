@@ -7,7 +7,7 @@ function setDefaultHost() {
   if (process.env.NODE_ENV === "production") {
     process.env.VUE_APP_BASE_HOST = host["online"];
   } else {
-    process.env.VUE_APP_BASE_HOST = host["yaya_yapi"];
+    process.env.VUE_APP_BASE_HOST = host["local_host"];
   }
 }
 function setBaseHost() {

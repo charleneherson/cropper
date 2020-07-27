@@ -50,7 +50,7 @@
 import { uniIcons } from "@dcloudio/uni-ui";
 
 export default {
-  name: "YyTitleBar",
+  name: "TitleBar",
   props: {
     // 标题
     title: {

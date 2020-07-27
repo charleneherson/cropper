@@ -128,9 +128,41 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-//
-//
 
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+//
+//
+var _default = {
+  methods: {
+    getInfo: function getInfo() {
+      var _this = this;
+
+      wx.getSetting({
+        success: function success(response) {
+          if (response.authSetting["scope.userInfo"]) {
+            wx.getUserInfo({
+              success: function success(res) {
+                console.log(res);
+                wx.downloadFile({
+                  url: res.userInfo.avatarUrl,
+                  success: function success(r) {}
+                });
+              }
+            });
+          } else {}
+        }
+      });
+    }
+  },
+  mounted: function mounted() {
+    this.getInfo();
+  }
+};
+exports.default = _default;
 
 /***/ })
 

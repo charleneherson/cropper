@@ -1,7 +1,7 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/my-course/my-course",
+    "pages/mall/mall",
     "pages/my/my"
   ],
   "subPackages": [
@@ -36,7 +36,7 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/my-course/my-course",
+        "pagePath": "pages/mall/mall",
         "iconPath": "./static/images/tabbar/icon-course.png",
         "selectedIconPath": "./static/images/tabbar/icon-course-active.png",
         "text": "商城"
@@ -61,5 +61,5 @@
     "wxb4d0ce9d5a7d5b8d"
   ],
   "usingComponents": {},
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap66.json"
 }

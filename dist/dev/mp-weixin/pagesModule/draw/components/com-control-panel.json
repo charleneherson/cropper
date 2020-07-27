@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "color-picker": "/components/common/color-picker/index"
+  },
+  "component": true
+}

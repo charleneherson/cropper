@@ -10,37 +10,47 @@
     from: 拷贝对象, to: 拷贝到,
     路径以vue.config.js为基准
 */
-const path = require('path');
-const fs = require('fs');
+const path = require("path");
+const fs = require("fs");
 
 function shearFilePromise(from, to) {
   console.log(path.join(__dirname, from));
   console.log(path.join(__dirname, to));
   return new Promise((resolve, reject) => {
-    fs.readFile(path.join(__dirname, from), 'utf8', (err, content) => {
-      if (err) {
-        console.log(err);
-        
-        console.log(`${from}不存在`);
-        // console.log('请检查shearFilePlugin配置');
-        reject(err);
-      } else {
-        fs.writeFile(path.join(__dirname, to), content, (serr) => {
-          if (serr) {
-            console.log(`写入${to}报错`);
-            reject(serr);
-          } else {
-            fs.rmdir(from, function(err){
-              if(err){
-                   throw err;
+    fs.readFile(
+      path.join(__dirname, from),
+      "utf8",
+      (err, content) => {
+        if (err) {
+          console.log(err);
+
+          console.log(`${from}不存在`);
+          // console.log('请检查shearFilePlugin配置');
+          reject(err);
+        } else {
+          fs.writeFile(
+            path.join(__dirname, to),
+            content,
+            serr => {
+              if (serr) {
+                console.log(`写入${to}报错`);
+                reject(serr);
+              } else {
+                fs.rmdir(from, function(err) {
+                  if (err) {
+                    throw err;
+                  }
+                  console.log(
+                    "文件:" + from + "删除成功！"
+                  );
+                });
+                resolve();
               }
-              console.log('文件:'+from+'删除成功！');
-           })
-          resolve();
-          }
-        });
+            }
+          );
+        }
       }
-    });
+    );
   });
 }
 
@@ -53,9 +63,8 @@ function shearFilePromise(from, to) {
 //       resultPath = path.join(__dirname, resultPath)
 //   }
 
-//   /Users/ujipin/Desktop/desktop/yaya-project/duck-chinese-minapp/dist/dev/mp-weixin/node-modules/@yaya
 //   function createDir (dirPath) {
-//       fs.mkdirSync(dirPath)        
+//       fs.mkdirSync(dirPath)
 //   }
 
 //   if (fs.existsSync(copiedPath)) {
@@ -72,7 +81,7 @@ function shearFilePromise(from, to) {
 //       for (let i = 0; i < files.length; i++) {
 //           const cf = files[i]
 //           const ccp = path.join(copiedPath, cf.name)
-//           const crp = path.join(resultPath, cf.name)  
+//           const crp = path.join(resultPath, cf.name)
 //           if (cf.isFile()) {
 //               /**
 //                * @des 创建文件,使用流的形式可以读写大文件
@@ -97,4 +106,7 @@ function shearFilePromise(from, to) {
 //       console.log('do not exist path: ', copiedPath);
 //   }
 // }
-shearFilePromise('../dist/dev/mp-weixin/node-modules/@yaya','../src/pagesModule1')
+shearFilePromise(
+  "../dist/dev/mp-weixin/node-modules/@yaya",
+  "../src/pagesModule1"
+);

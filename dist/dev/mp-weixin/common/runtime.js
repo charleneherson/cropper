@@ -104,11 +104,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"pagesModule/draw/components/com-header":1};
+/******/ 		var cssChunks = {"components/common/bottom-panel/index":1,"components/common/color-picker/index":1,"pagesModule/draw/components/com-header":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"pagesModule/draw/components/com-header":"pagesModule/draw/components/com-header"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"pagesModule/draw/components/com-draw":"pagesModule/draw/components/com-draw","components/common/bottom-panel/index":"components/common/bottom-panel/index","components/common/color-picker/index":"components/common/color-picker/index","pagesModule/draw/components/com-header":"pagesModule/draw/components/com-header"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {
